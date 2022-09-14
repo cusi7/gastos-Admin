@@ -1,0 +1,71 @@
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div {
+    padding: 5px 0;
+}
+
+.check {
+    margin-right: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #ccc
+}
+
+.completed .total {
+    color: #ccc
+}
+
+.title {
+    display: flex;
+    width: 50%;
+}
+
+.price {
+    width: 15%;
+    padding: 0 5px;
+}
+
+.quantity {
+    width: 10%;
+    padding: 0 5px;
+}
+
+.total {
+    width: 15%;
+    padding: 0 5px;
+    font-weight: bolder;
+    color:darkgreen
+}
+
+.actions {
+    width: 10%;
+    padding: 0 5px;
+    text-align: center;
+}
+
+@media (max-width: 950px) {
+    
+    .price {
+        display: none;
+    }
+    
+    .quantity {
+        width: 20%;
+    }
+    
+    .total {
+        width: 25%;
+        
+    }
+    
+    .actions {
+        width: 20%;
+    }
+
+}

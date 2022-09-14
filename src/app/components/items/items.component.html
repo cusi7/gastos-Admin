@@ -1,0 +1,21 @@
+<div>
+    <app-total mensaje='Total a pagar: ' [total]="total"></app-total>
+
+    <div>
+        <mat-card class="titulos">
+            <span class="art">Artículo</span>
+            <span class="pUni">Precio unitario</span>
+            <span class="cant">Cantidad</span>
+            <span class="total">Precio total</span>
+        </mat-card>
+        <app-item 
+        *ngFor= "let item of items" 
+        [item]= "item"
+        (deleteItem)="deleteProduct($event)"
+        (changeCompItem)="changeCompProduct($event)"
+        >
+    
+        </app-item>
+    </div>
+
+</div>

@@ -1,0 +1,42 @@
+.titulos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titulos span {
+    font-weight: bolder;
+    color: dimgrey;
+}
+.art {
+    width: 47%;
+    padding: 0 5px;
+}
+
+.pUni {
+    width: 15%;
+}
+
+.cant {
+    width: 12%;
+}
+
+.total {
+    width: 26%;
+}
+
+@media (max-width: 950px) {
+    
+    .art {
+        width: 30%;
+    }
+    .pUni {
+        display: none;
+    }
+    .cant {
+        width: 25%;
+    }
+    .total {
+        width: 45%;
+    }
+
+}

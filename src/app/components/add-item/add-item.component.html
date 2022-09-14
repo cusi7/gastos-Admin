@@ -1,0 +1,22 @@
+<mat-card class="card">
+<form (ngSubmit)="onSubmit()" class="flex">
+    <h2>Ingresa un artículo</h2>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Nombre del artículo:</mat-label>
+        <input matInput name="title" [(ngModel)]="title"/>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Precio:</mat-label>
+        <input matInput type="number" name="price" [(ngModel)]="price"/>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Cantidad:</mat-label>
+        <input matInput type="number" name="quantity" [(ngModel)]="quantity"/>
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button color="primary" [disabled]="disabledButton()">
+        Crear
+    </button>
+
+</form>
+</mat-card>
